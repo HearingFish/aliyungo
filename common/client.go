@@ -14,18 +14,20 @@ import (
 
 // A Client represents a client of ECS services
 type Client struct {
-	AccessKeyId     string //Access Key Id
-	AccessKeySecret string //Access Key Secret
-	debug           bool
-	httpClient      *http.Client
-	endpoint        string
-	version         string
+	AccessKeyId          string //Access Key Id
+	AccessKeySecret      string //Access Key Secret
+	ResourceOwnerAccount string
+	debug                bool
+	httpClient           *http.Client
+	endpoint             string
+	version              string
 }
 
 // NewClient creates a new instance of ECS client
-func (client *Client) Init(endpoint, version, accessKeyId, accessKeySecret string) {
+func (client *Client) Init(endpoint, version, accessKeyId, accessKeySecret, resourceOwnerAccount string) {
 	client.AccessKeyId = accessKeyId
 	client.AccessKeySecret = accessKeySecret + "&"
+	client.ResourceOwnerAccount = resourceOwnerAccount
 	client.debug = false
 	client.httpClient = &http.Client{}
 	client.endpoint = endpoint
@@ -52,6 +54,10 @@ func (client *Client) SetAccessKeySecret(secret string) {
 	client.AccessKeySecret = secret + "&"
 }
 
+func (client *Client) SetResourceOwnerAccount(account string) {
+	client.ResourceOwnerAccount = account
+}
+
 // SetDebug sets debug mode to log the request/response message
 func (client *Client) SetDebug(debug bool) {
 	client.debug = debug
@@ -61,7 +67,7 @@ func (client *Client) SetDebug(debug bool) {
 func (client *Client) Invoke(action string, args interface{}, response interface{}) error {
 
 	request := Request{}
-	request.init(client.version, action, client.AccessKeyId)
+	request.init(client.version, action, client.AccessKeyId, client.ResourceOwnerAccount)
 
 	query := util.ConvertToQueryValues(request)
 	util.SetQueryValues(args, &query)

@@ -1,8 +1,9 @@
 package ecs
 
 import (
-	"github.com/denverdino/aliyungo/common"
 	"os"
+
+	"github.com/HearingFish/aliyungo/common"
 )
 
 // Interval for checking status in WaitForXXX method

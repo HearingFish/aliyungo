@@ -1,6 +1,6 @@
 package dns
 
-import "github.com/denverdino/aliyungo/common"
+import "github.com/HearingFish/aliyungo/common"
 
 type DescribeDomainRecordsArgs struct {
 	DomainName string

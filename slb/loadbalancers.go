@@ -1,8 +1,8 @@
 package slb
 
 import (
-	"github.com/denverdino/aliyungo/common"
-	"github.com/denverdino/aliyungo/util"
+	"github.com/HearingFish/aliyungo/common"
+	"github.com/HearingFish/aliyungo/util"
 )
 
 type AddressType string

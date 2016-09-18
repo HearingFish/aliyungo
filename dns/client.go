@@ -1,7 +1,7 @@
 package dns
 
 import (
-	"github.com/denverdino/aliyungo/common"
+	"github.com/HearingFish/aliyungo/common"
 	"os"
 )
 

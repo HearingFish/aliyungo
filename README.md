@@ -27,7 +27,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/denverdino/aliyungo/ecs"
+	"github.com/HearingFish/aliyungo/ecs"
 )
 
 const ACCESS_KEY_ID = "<YOUR_ID>"
@@ -42,15 +42,15 @@ func main() {
 
 ## Documentation
 
-  *  ECS: [https://godoc.org/github.com/denverdino/aliyungo/ecs](https://godoc.org/github.com/denverdino/aliyungo/ecs) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/ecs?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/ecs)
-  *  OSS: [https://godoc.org/github.com/denverdino/aliyungo/oss](https://godoc.org/github.com/denverdino/aliyungo/oss) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/oss?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/oss)
-  *  SLB: [https://godoc.org/github.com/denverdino/aliyungo/slb](https://godoc.org/github.com/denverdino/aliyungo/slb) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/slb?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/slb)
-  *  DNS: [https://godoc.org/github.com/denverdino/aliyungo/dns](https://godoc.org/github.com/denverdino/aliyungo/dns) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/dns?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/dns)
-  *  SLS: [https://godoc.org/github.com/denverdino/aliyungo/sls](https://godoc.org/github.com/denverdino/aliyungo/sls) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/sls?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/sls)
-  *  RAM: [https://godoc.org/github.com/denverdino/aliyungo/ram](https://godoc.org/github.com/denverdino/aliyungo/ram) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/ram?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/ram)
-  *  RDS: [https://godoc.org/github.com/denverdino/aliyungo/rds](https://godoc.org/github.com/denverdino/aliyungo/rds) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/rds?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/rds)
-  *  CMS: [https://godoc.org/github.com/denverdino/aliyungo/cms](https://godoc.org/github.com/denverdino/aliyungo/cms) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/cms?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/cms)
-  *  STS: [https://godoc.org/github.com/denverdino/aliyungo/sts](https://godoc.org/github.com/denverdino/aliyungo/sts) [![GoDoc](https://godoc.org/github.com/denverdino/aliyungo/sts?status.svg)](https://godoc.org/github.com/denverdino/aliyungo/sts)
+  *  ECS: [https://godoc.org/github.com/HearingFish/aliyungo/ecs](https://godoc.org/github.com/HearingFish/aliyungo/ecs) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/ecs?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/ecs)
+  *  OSS: [https://godoc.org/github.com/HearingFish/aliyungo/oss](https://godoc.org/github.com/HearingFish/aliyungo/oss) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/oss?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/oss)
+  *  SLB: [https://godoc.org/github.com/HearingFish/aliyungo/slb](https://godoc.org/github.com/HearingFish/aliyungo/slb) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/slb?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/slb)
+  *  DNS: [https://godoc.org/github.com/HearingFish/aliyungo/dns](https://godoc.org/github.com/HearingFish/aliyungo/dns) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/dns?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/dns)
+  *  SLS: [https://godoc.org/github.com/HearingFish/aliyungo/sls](https://godoc.org/github.com/HearingFish/aliyungo/sls) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/sls?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/sls)
+  *  RAM: [https://godoc.org/github.com/HearingFish/aliyungo/ram](https://godoc.org/github.com/HearingFish/aliyungo/ram) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/ram?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/ram)
+  *  RDS: [https://godoc.org/github.com/HearingFish/aliyungo/rds](https://godoc.org/github.com/HearingFish/aliyungo/rds) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/rds?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/rds)
+  *  CMS: [https://godoc.org/github.com/HearingFish/aliyungo/cms](https://godoc.org/github.com/HearingFish/aliyungo/cms) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/cms?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/cms)
+  *  STS: [https://godoc.org/github.com/HearingFish/aliyungo/sts](https://godoc.org/github.com/HearingFish/aliyungo/sts) [![GoDoc](https://godoc.org/github.com/HearingFish/aliyungo/sts?status.svg)](https://godoc.org/github.com/HearingFish/aliyungo/sts)
   
 ## Build and Install
 
@@ -124,7 +124,7 @@ go test
   * chainone (chainone@gmail.com)
   
 ## License
-This project is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/denverdino/aliyungo/blob/master/LICENSE.txt) for the full license text.
+This project is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/HearingFish/aliyungo/blob/master/LICENSE.txt) for the full license text.
 
 
 ## Related projects

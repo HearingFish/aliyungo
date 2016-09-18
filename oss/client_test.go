@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/denverdino/aliyungo/oss"
+	"github.com/HearingFish/aliyungo/oss"
 )
 
 var (

@@ -3,7 +3,7 @@ package ecs
 import (
 	"testing"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/HearingFish/aliyungo/common"
 )
 
 func TestSecurityGroups(t *testing.T) {

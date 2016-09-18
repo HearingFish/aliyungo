@@ -3,7 +3,7 @@ package slb
 import (
 	"encoding/json"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/HearingFish/aliyungo/common"
 )
 
 type AddBackendServersArgs struct {

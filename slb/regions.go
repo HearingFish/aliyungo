@@ -1,6 +1,6 @@
 package slb
 
-import "github.com/denverdino/aliyungo/common"
+import "github.com/HearingFish/aliyungo/common"
 
 type DescribeRegionsArgs struct {
 }

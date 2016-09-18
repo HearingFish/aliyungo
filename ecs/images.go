@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/denverdino/aliyungo/common"
-	"github.com/denverdino/aliyungo/util"
+	"github.com/HearingFish/aliyungo/common"
+	"github.com/HearingFish/aliyungo/util"
 )
 
 // ImageOwnerAlias represents image owner

@@ -1,6 +1,6 @@
 package sts
 
-import "github.com/denverdino/aliyungo/common"
+import "github.com/HearingFish/aliyungo/common"
 
 type AssumeRoleRequest struct {
 	RoleArn         string

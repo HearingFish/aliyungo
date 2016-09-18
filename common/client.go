@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/denverdino/aliyungo/util"
+	"github.com/HearingFish/aliyungo/util"
 )
 
 // A Client represents a client of ECS services
@@ -24,10 +24,9 @@ type Client struct {
 }
 
 // NewClient creates a new instance of ECS client
-func (client *Client) Init(endpoint, version, accessKeyId, accessKeySecret, resourceOwnerAccount string) {
+func (client *Client) Init(endpoint, version, accessKeyId, accessKeySecret string) {
 	client.AccessKeyId = accessKeyId
 	client.AccessKeySecret = accessKeySecret + "&"
-	client.ResourceOwnerAccount = resourceOwnerAccount
 	client.debug = false
 	client.httpClient = &http.Client{}
 	client.endpoint = endpoint

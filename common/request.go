@@ -26,20 +26,26 @@ type Request struct {
 	Timestamp            util.ISO6801Time
 	SignatureVersion     string
 	SignatureNonce       string
+	OwnerAccount         string
+	OwnerId              string
 	ResourceOwnerAccount string
+	ResourceOwnerId      string
 	Action               string
 }
 
-func (request *Request) init(version string, action string, AccessKeyId string, account string) {
+func (request *Request) init(client *Client, action string) {
 	request.Format = JSONResponseFormat
 	request.Timestamp = util.NewISO6801Time(time.Now().UTC())
-	request.Version = version
+	request.Version = client.version
 	request.SignatureVersion = SignatureVersion
 	request.SignatureMethod = SignatureMethod
 	request.SignatureNonce = util.CreateRandomString()
 	request.Action = action
-	request.AccessKeyId = AccessKeyId
-	request.ResourceOwnerAccount = account
+	request.AccessKeyId = client.AccessKeyId
+	request.OwnerAccount = client.OwnerAccount
+	request.OwnerId = client.OwnerId
+	request.ResourceOwnerAccount = client.ResourceOwnerAccount
+	request.ResourceOwnerId = client.ResourceOwnerId
 }
 
 type Response struct {

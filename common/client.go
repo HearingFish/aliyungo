@@ -16,7 +16,10 @@ import (
 type Client struct {
 	AccessKeyId          string //Access Key Id
 	AccessKeySecret      string //Access Key Secret
+	OwnerAccount         string
+	OwnerId              string
 	ResourceOwnerAccount string
+	ResourceOwnerId      string
 	debug                bool
 	httpClient           *http.Client
 	endpoint             string
@@ -53,8 +56,20 @@ func (client *Client) SetAccessKeySecret(secret string) {
 	client.AccessKeySecret = secret + "&"
 }
 
+func (client *Client) SetOwnerAccount(account string) {
+	client.OwnerAccount = account
+}
+
+func (client *Client) SetOwnerId(id string) {
+	client.OwnerId = id
+}
+
 func (client *Client) SetResourceOwnerAccount(account string) {
 	client.ResourceOwnerAccount = account
+}
+
+func (client *Client) SetResourceOwnerId(id string) {
+	client.ResourceOwnerId = id
 }
 
 // SetDebug sets debug mode to log the request/response message
@@ -66,7 +81,7 @@ func (client *Client) SetDebug(debug bool) {
 func (client *Client) Invoke(action string, args interface{}, response interface{}) error {
 
 	request := Request{}
-	request.init(client.version, action, client.AccessKeyId, client.ResourceOwnerAccount)
+	request.init(client, action)
 
 	query := util.ConvertToQueryValues(request)
 	util.SetQueryValues(args, &query)
